@@ -31,7 +31,7 @@ most.fromEvent('_watcher::transformable', documentEvents)
     [function($element){ return $element.attr('learning-element') === 'text' }, function($element){ $(document).trigger('watcher::transformText', [ $element ]) }],
     [function($element){ return $element.attr('learning-element') === 'video' }, function($element){ $(document).trigger('watcher::transformVideo', [ $element ]) }],
     [function($element){ return $element.attr('learning-element') === 'test' }, function($element){ /*$element.attr('transformed', true).html('DONE!');*/ $(document).trigger('watcher::transformTest', [ $element ]) }],
-    [R.T, function($element){ $element.attr('transformed', true) }]
+    [R.T, function($element){ $element.attr('transformed', 'unknown-element') }]
   ]))
   .drain();
 
